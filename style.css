@@ -107,6 +107,7 @@ body {
 }
 
 .btns-container button {
+    position: relative;
     grid-row: 2;
     cursor: pointer;
     border: none;
@@ -114,6 +115,31 @@ body {
     font-size: 1.2rem;
     color: white;
     background: #d8323c;
+    border: 2px solid #d8323c;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+    z-index: 0;
+}
+
+.btns-container button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: white;
+    transition: 0.4s ease-out;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.btns-container button:hover {
+    color: #d8323c;
+}
+
+.btns-container button:hover::before {
+    width: 110%;
 }
 
 .btns-container button:nth-child(1) {
@@ -133,13 +159,13 @@ body {
     width: 20%;
     position: fixed;
     height: 100vh;
-    background: #0c0e0c;
+    background: #242424;
     display: grid;
     grid-template: 1fr 4fr 2fr 2fr 0.5fr / 1fr;
     z-index: 2;
     color: white;
-    border-left: 8px solid #0c0e0c;
-    border-right: 8px solid #0c0e0c;
+    border-left: 8px solid #242424;
+    border-right: 8px solid #242424;
 }
 
 .nav h2 {
