@@ -6,21 +6,84 @@
 body {
     height: 100%;
     display: grid;
+    grid-template: 1fr 2fr / 1fr 4fr;
+}
+
+.header {
+    grid-column: 2;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(2, 1fr);
+    border: 2px solid green;
+}
+
+.search-container {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container i {
+    margin-right: 1rem;
+}
+
+.search-container input {
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: #d8d8d8;
+    padding-left: 30px;
+    font-size: 1.1rem;
 }
 
 .profile-container {
-    border: 1px solid black;
-    width: 300px;
+    border: 2px solid rgb(255, 0, 0);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.profile-container i {
+    grid-column: 2;
 }
 
 .profile-picture {
-    border-radius: 5px;
-    width: 100%;
+    border-radius: 50%;
 }
 
 .welcome-container {
-    border: 1px solid black;
-    width: 300px;
+    border: 2px solid rgb(0, 174, 255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.btns-container {
+    border: 2px solid purple;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+    column-gap: 15px;
+}
+
+.btns-container button {
+    grid-row: 2;
+}
+
+.btns-container button:nth-child(1) {
+    grid-column: 2;
+}
+
+.btns-container button:nth-child(2) {
+    grid-column: 3;
+}
+
+.btns-container button:nth-child(3) {
+    grid-column: 4;
+}
+
+.nav {
+    width: 20%;
+    border: 2px solid black;
+    position: fixed;
+    height: 100vh;
 }
