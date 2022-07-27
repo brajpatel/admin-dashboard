@@ -41,10 +41,14 @@ body {
     height: 40px;
     border-radius: 30px;
     border: none;
+    background: #eaebea;
     outline: none;
-    background: #d8d8d8;
     padding-left: 30px;
     font-size: 1.1rem;
+}
+
+.search-container input:focus {
+    border: 2px solid #dbdbdb;
 }
 
 .profile-container {
@@ -109,7 +113,7 @@ body {
     border-radius: 10px;
     font-size: 1.2rem;
     color: white;
-    background: #163599;
+    background: #d8323c;
 }
 
 .btns-container button:nth-child(1) {
@@ -177,6 +181,8 @@ body {
 
 .primary-links {
     grid-row: 2;
+    border-top: 3px solid white;
+    padding-top: 10px;
 }
 
 .secondary-links {
