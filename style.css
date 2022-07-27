@@ -23,6 +23,9 @@ body {
 
 .search-container {
     background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-container i {
@@ -56,7 +59,7 @@ body {
 .header-lower {
     grid-area: 2 / 1 / 3 / 3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 3fr;
 }
 
 .welcome-container {
