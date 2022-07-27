@@ -10,12 +10,17 @@ body {
 
 .profile-container {
     border: 1px solid black;
-    width: 400px;
+    width: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-#profile-picture {
+.profile-picture {
     border-radius: 5px;
     width: 100%;
+}
+
+.welcome-container {
+    border: 1px solid black;
+    width: 300px;
 }
