@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,18 @@ body {
     height: 100%;
     display: grid;
     grid-template: 1fr 3.6fr / 1fr 4fr;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h2, h3 {
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* ===== HEADER ===== */
@@ -53,25 +68,25 @@ body {
 
 .profile-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1.5fr 2fr 1fr;
     align-items: center;
 }
 
 .profile-container i {
     grid-column: 2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
 .profile-container img {
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid #242424;
     transition: 0.2s ease-out;
 }
 
 .profile-container img:hover {
-    border: 2px solid red;
+    border: 2px solid #d8323c;
 }
 
 .profile-picture {
@@ -92,6 +107,7 @@ body {
 
 .welcome-container img {
     justify-self: flex-end;
+    border: 2px solid #242424;
 }
 
 .user-welcome {
@@ -102,8 +118,7 @@ body {
 
 .btns-container {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
-    column-gap: 30px;
+    grid-template-columns:  repeat(3, 1fr);
 }
 
 .btns-container button {
@@ -119,6 +134,9 @@ body {
     overflow: hidden;
     transition: 0.4s ease-out;
     z-index: 0;
+    font-family: 'Ubuntu', sans-serif;
+    width: 60%;
+    height: 70%;
 }
 
 .btns-container button::before {
@@ -143,15 +161,15 @@ body {
 }
 
 .btns-container button:nth-child(1) {
-    grid-column: 2;
+    justify-self: end;
 }
 
 .btns-container button:nth-child(2) {
-    grid-column: 3;
+    justify-self: center;
 }
 
 .btns-container button:nth-child(3) {
-    grid-column: 4;
+    justify-self: start;
 }
 
 /* ===== SIDE BAR ===== */
@@ -166,15 +184,16 @@ body {
     color: white;
     border-left: 8px solid #242424;
     border-right: 8px solid #242424;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.nav h2 {
+h1 {
     justify-self: center;
     align-self: center;
     font-size: 2.4rem;
 }
 
-.nav h2 i {
+.nav h1 i {
     margin-right: 1rem;
 }
 
