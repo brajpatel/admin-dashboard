@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: grid;
+}
+
+.profile-container {
+    border: 1px solid black;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#profile-picture {
+    border-radius: 5px;
+    width: 100%;
+}
