@@ -9,6 +9,7 @@ body {
     grid-template: 1fr 3.6fr / 1fr 4fr;
 }
 
+/* ===== HEADER ===== */
 .header {
     grid-column: 2;
     display: grid;
@@ -116,13 +117,34 @@ body {
     grid-column: 4;
 }
 
+/* ===== SIDE BAR ===== */
 .nav {
     width: 20%;
     position: fixed;
     height: 100vh;
     background: rgb(65, 225, 164);
+    display: grid;
+    grid-template: 1fr 4fr 2fr 2fr 0.5fr / 1fr;
 }
 
+.nav ul {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.primary-links {
+    background: orange;
+}
+
+.secondary-links {
+    background: pink;
+    grid-row: 4;
+}
+
+/* ===== MAIN ===== */
 .main {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
@@ -131,12 +153,15 @@ body {
 
 .projects {
     grid-area: 1 / 1 / 3 / 2;
+    background: wheat;
 }
 
 .announcements {
     grid-area: 1 / 2 / 2 / 2;
+    background: beige;
 }
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
+    background: lightcoral;
 }
