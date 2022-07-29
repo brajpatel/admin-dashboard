@@ -7,7 +7,7 @@
 }
 
 :root {
-    --light: #eaebea;
+    --light: #e2e2e2;
     --dark: #242424;
     --color: #d8323c;
     --text: #4d4d4d;
@@ -232,18 +232,13 @@ h1 {
 }
 
 .nav ul li:hover {
-    background: var(--light);
-    color: var(--dark);
-}
-
-.nav ul li:hover i {
-    color: var(--dark);
+    background: var(--color);
 }
 
 .primary-links {
     grid-row: 2;
     border-top: 3px solid white;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .secondary-links {
@@ -257,7 +252,7 @@ h1 {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     background: var(--light);
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }
 
 .projects-container {
@@ -268,12 +263,12 @@ h1 {
 
 .projects-container h2 {
     grid-area: 1 / 1 / 2 / 3;
-    margin: 2rem 0 -1rem 2rem;
+    margin: 2rem 0 0 2rem;
 }
 
 .project {
     background: white;
-    box-shadow: 3px 3px 6px rgba(161, 161, 161, 0.651);
+    box-shadow: 3px 3px 8px rgba(161, 161, 161, 0.651);
     margin: 1rem 2rem;
     border-radius: 8px;
     position: relative;
@@ -360,14 +355,14 @@ h1 {
 .announcements-container h2, 
 .trending-container h2 {
     grid-row: 1;
-    margin: 30px 0 0 20px;
+    margin: 30px 0 20px;
 }
 
 .announcements,
 .trending {
     grid-row: 2;
     background: white;
-    margin: 0 30px 10px 0;
+    margin: -20px 30px 10px 0;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(161, 161, 161, 0.651);
 }
