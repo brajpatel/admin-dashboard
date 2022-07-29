@@ -293,3 +293,12 @@ h1 {
     box-shadow: 2px 2px 4px rgba(161, 161, 161, 0.651);
 }
 
+.announcements {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+}
+
+.trending {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr
+}
